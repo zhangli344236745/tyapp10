@@ -33,4 +33,15 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
+      
+      - name: install yarn
+        run: npm i -g yarn
+        
+      - name: install packages
+        run: yarn install
+      
+      - name: build
+        run: yarn build
+        
+      
           echo test, and deploy your project.
